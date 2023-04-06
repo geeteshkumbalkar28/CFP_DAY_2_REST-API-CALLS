@@ -9,6 +9,10 @@ public class demoController {
     public String message(){
         return "Hello from BridgeLabz";
     }
+    @RequestMapping(value="/hello/query",method = RequestMethod.GET)
+    public String message1(@RequestParam String name){
+        return name;
+    }
 
 
 }
