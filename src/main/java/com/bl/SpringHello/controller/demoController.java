@@ -13,7 +13,10 @@ public class demoController {
     public String message1(@RequestParam String name){
         return name;
     }
-
+    @RequestMapping(value="/hello/param/{name}",method = RequestMethod.GET)
+    public String message2(@PathVariable String name){
+        return name;
+    }
 
 }
 
