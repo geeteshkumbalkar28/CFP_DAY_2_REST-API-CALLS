@@ -17,6 +17,10 @@ public class demoController {
     public String message2(@PathVariable String name){
         return name;
     }
+    @RequestMapping(value="/body",method = RequestMethod.POST)
+    public String acceptData(@RequestBody User user){
+        return user.toString();
+    }
 
 }
 
